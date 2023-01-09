@@ -11,7 +11,7 @@ Rails 5.2.6
 - Clone this repo
 - `bundle install`
 - `bundle exec figaro install`
-- `rails db:{create,migrate}``
+- `rails db:{create,migrate}`
 - `rails s`
 
 ### Api Info
