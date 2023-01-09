@@ -1,0 +1,18 @@
+<center>SEARCH RESULTS!!!</center>
+
+
+
+<% @stations.each do |s| %>
+  <center><p><%= s.name %></p>
+  <p><%= s.address %></p>
+  <p><%= s.fuel_type %></p>
+  <p><%= s.hours %></p></center>
+<% end %>
+
+<% @gps.each do |g| %>
+  <center><p>distance: <%= g.distance %> miles </p>
+  <p>travel time: <%= g.time %> seconds </p>
+  <% g.directions.each do |d| %>
+    <p><%= d %></p>
+  <% end %></center>
+<% end %>
